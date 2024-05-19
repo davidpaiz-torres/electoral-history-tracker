@@ -2,6 +2,7 @@ const validDistricts = [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 const cdInput = document.getElementById("cd-Input");
 const submitButton = document.getElementById("submit");
 
+
 // Add event listener for the submit button
         submitButton.addEventListener("click", function(event) {
                 event.preventDefault(); 
@@ -27,9 +28,13 @@ const submitButton = document.getElementById("submit");
                                 return;
                         }
                         setTimeout(function() {
+                                document.getElementById("intro_Grafs").style.display = "none";
+                                document.getElementById("current_reps").style.display = "none";
                                 popup.remove();
-                                launchNewPage(userInput);
-                        }, 3000);
+                        }, 1850);
+                               
+                               
+                       
                 }
 }
 // Defines the popup styling properties 
@@ -55,7 +60,7 @@ const submitButton = document.getElementById("submit");
 // Remove the pop-up after 3 seconds 
                 setTimeout(function() {
                         popup.remove();
-                }, 3000);
+                }, 1850);
         }
    
 
@@ -81,7 +86,7 @@ cdButton.addEventListener("click", function() {
                 loadingPopup.remove();
 // Open the external website in a pop-up window
                 const popup = window.open("https://findmypollsite.vote.nyc", "_blank", "width=500,height=500");
-        }, 3000);
+        }, 1850);
 });
 
                           
