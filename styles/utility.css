@@ -319,7 +319,7 @@ nav{
 @media screen and (max-width:590px)  {
     nav{
         display: flex;
-        gap: 150px;
+        gap: 120px;
         flex-direction: row;
         justify-content: space-evenly;
         max-width: 100%;
