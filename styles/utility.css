@@ -14,15 +14,25 @@ body {
 
 
 
+
 #graphics{
-display:none;
+    display:none;
 }
 
-#chart_1{
+.graphics_active{
+    padding-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+    width: 70%;
+    height: auto;
     margin: 0 auto;
-    width: 50%;
-    padding-bottom:24px;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 main{
     display:flex;
@@ -194,6 +204,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 0;
+    padding-bottom:5px;
     
 }
 
