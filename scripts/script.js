@@ -84,7 +84,9 @@ function enterDistrict() {
 
 
 
-                // Hide all divs
+                // Hide all divs that start with "div-". 
+                // We use "[id^='div-']" because of a conflict that didn't allow the original code to work 
+                // each div was previously named by district number, which javascript/css didn't like very much. 
                 const allDivs = document.querySelectorAll("[id^='div-']");
                 allDivs.forEach(function(div) {
                         div.style.display = "none";
